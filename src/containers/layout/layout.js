@@ -7,6 +7,13 @@ import Header from '../../components/header/header'
 import Footer from '../../components/footer/footer'
 import './layout.scss'
 
+const menu = [
+  { text: 'Features', link: '/features' },
+  { text: 'Pricing', link: '/pricing' },
+  { text: 'Learn more', link: '/learn-more' },
+  { text: 'Contact sales', link: '/contact' },
+]
+
 const Layout = ({ children }) => (
   <StaticQuery
     query={graphql`
@@ -21,7 +28,7 @@ const Layout = ({ children }) => (
     render={data => (
       <>
         <Helmet
-          title={data.site.siteMetadata.title}
+          title={ data.site.siteMetadata.title }
           meta={[
             { name: 'description', content: 'Sample' },
             { name: 'keywords', content: 'sample, something' },
@@ -29,17 +36,8 @@ const Layout = ({ children }) => (
         >
           <html lang="en" />
         </Helmet>
-        <Header siteTitle={data.site.siteMetadata.title} />
-        <div
-          style={{
-            margin: '0 auto',
-            maxWidth: 960,
-            padding: '0px 1.0875rem 1.45rem',
-            paddingTop: 0,
-          }}
-        >
-          {children}
-        </div>
+        <Header siteTitle={ data.site.siteMetadata.title } menu={ menu }/>
+        {children}
         <Footer />
       </>
     )}
