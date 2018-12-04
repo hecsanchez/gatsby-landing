@@ -11,7 +11,7 @@ const Header = ({ menu }) => (
       <div className="navigation">
         { menu.map((item) => {
           return (
-            <Link className="navigation__item" to={ item.link }>{ item.text }</Link>
+            <Link key={ item.text } className="navigation__item" to={ item.link }>{ item.text }</Link>
           )
         })}
       </div>

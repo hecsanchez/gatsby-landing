@@ -58,3 +58,12 @@ export const features = [
   'Unlimited third-party integrations',
   'Remote wipe'
 ]
+
+export const clients = [
+  'evernote',
+  'marvel',
+  'brazzers',
+  'motorola',
+  'netflix',
+  'adobe'
+]

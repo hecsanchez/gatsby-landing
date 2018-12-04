@@ -8,26 +8,26 @@ const PricingTable = ({ plans }) => (
   <div className="pricing-table">
     {
       plans.map((plan) => (
-        <div className={`plan ${plan.featured ? 'plan--featured' : ''}`}>
-          <div class="plan-section">
+        <div key={plan.name} className={`plan ${plan.featured ? 'plan--featured' : ''}`}>
+          <div className="plan-section">
             <span className="plan__title">{ plan.title }</span>
             <span className="plan__description">{ plan.description }</span>
           </div>
-          <div class="plan-section">
+          <div className="plan-section">
             <span className="plan__price">{ plan.price }</span>
             <span className="plan__priceDescription">{ plan.priceDescription }</span>
             <span className="plan__promoText">{ plan.promoText }</span>
           </div>
-          <div class="plan-section plan-section--last">
+          <div className="plan-section plan-section--last">
             <ul>
               { 
                 plan.features.included.map((feature) => (
-                  <li class="feature feature--included">{ features[feature] }</li>
+                  <li key={ feature } className="feature feature--included">{ features[feature] }</li>
                 ))
               }
               { 
                 plan.features.notIncluded.map((feature) => (
-                  <li class="feature feature--notIncluded">{ features[feature] }</li>
+                  <li key={ feature } className="feature feature--notIncluded">{ features[feature] }</li>
                 ))
               }
             </ul>

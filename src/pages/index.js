@@ -1,19 +1,21 @@
 import React from 'react'
-
+import { Link } from 'gatsby'
 import PricingTable from '../components/pricingTable/pricingTable'
 import Layout from '../containers/layout/layout'
 import Section from '../containers/section/section'
 import Icon from '../components/icon/icon'
-import { plans } from '../constants'
+import { plans, clients } from '../constants'
 
 import '../images/icon-adobe.svg'
-import '../images/icon-blazers.svg'
+import '../images/icon-brazzers.svg'
 import '../images/icon-evernote.svg'
 import '../images/icon-marvel.svg'
 import '../images/icon-data.svg'
 import '../images/icon-globe.svg'
 import '../images/icon-prototype.svg'
 import '../images/icon-texts.svg'
+import '../images/icon-motorola.svg'
+import '../images/icon-netflix.svg'
 import '../images/icon-blue.svg'
 
 
@@ -41,7 +43,13 @@ const IndexPage = () => (
       background='#5E6977'
       type='default'
       >
-      
+      <Link to='/' className='btn btn--highlighted'>Try it for free</Link>
+      <span className="">Superpasta trusted and used by multiple companies</span>
+      { 
+        clients.map((client) => (
+          <Icon name={client} />
+        ))
+      }
     </Section>
   </Layout>
 )
