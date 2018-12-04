@@ -5,6 +5,24 @@ export const menu = [
   { text: 'Contact sales', link: '/contact' },
 ]
 
+export const sellingPoints = [
+  {
+    icon: 'data',
+    title: 'Keep your Data',
+    description: 'Enterprise-ready performance and controls'
+  },
+  {
+    icon: 'prototype',
+    title: 'Prototype your Project',
+    description: '24/7 proactive threat scanning to prevent attacks.'
+  },
+  {
+    icon: 'texts',
+    title: 'Create Smart Texts',
+    description: '24/7 proactive threat scanning to prevent attacks.'
+  }
+]
+
 export const plans = [ 
   {
     name: 'Basic',

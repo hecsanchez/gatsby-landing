@@ -4,7 +4,7 @@ import PricingTable from '../components/pricingTable/pricingTable'
 import Layout from '../containers/layout/layout'
 import Section from '../containers/section/section'
 import Icon from '../components/icon/icon'
-import { plans, clients } from '../constants'
+import { sellingPoints, plans, clients } from '../constants'
 
 import '../images/icon-adobe.svg'
 import '../images/icon-brazzers.svg'
@@ -17,6 +17,7 @@ import '../images/icon-texts.svg'
 import '../images/icon-motorola.svg'
 import '../images/icon-netflix.svg'
 import '../images/icon-blue.svg'
+import heroImage from '../images/hero.jpg'
 
 
 const IndexPage = () => (
@@ -27,7 +28,18 @@ const IndexPage = () => (
       background='#ffffff'
       type='default'
       >
-      <Icon name="prototype" />
+      <img className="hero" src={heroImage} />
+      <div className="row">
+      { 
+        sellingPoints.map(({ icon, title, description }) => (
+          <div className="col--one-third selling-point ">
+            <Icon className="selling-point__icon" name={ icon } />
+            <span className="selling-point__title text--bold">{ title }</span>
+            <span className="selling-point__description text--default">{ description }</span>
+          </div>
+        ))
+      }
+      </div>
     </Section>
     <Section 
       title='Simple Pricing'
