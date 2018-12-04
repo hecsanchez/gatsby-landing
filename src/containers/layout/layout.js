@@ -5,14 +5,8 @@ import { StaticQuery, graphql } from 'gatsby'
 
 import Header from '../../components/header/header'
 import Footer from '../../components/footer/footer'
+import { menu } from '../../constants'
 import './layout.scss'
-
-const menu = [
-  { text: 'Features', link: '/features' },
-  { text: 'Pricing', link: '/pricing' },
-  { text: 'Learn more', link: '/learn-more' },
-  { text: 'Contact sales', link: '/contact' },
-]
 
 const Layout = ({ children }) => (
   <StaticQuery
