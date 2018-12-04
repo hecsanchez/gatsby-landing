@@ -20,7 +20,6 @@ const Header = ({ menu }) => (
 )
 
 Header.propTypes = {
-  menu: PropTypes.node.isRequired,
 }
 
 Header.defaultProps = {
