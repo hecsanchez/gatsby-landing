@@ -6,12 +6,12 @@ import logo from './module-logo.png'
 
 const Header = ({ menu }) => (
   <header>
-    <div className="wrapper">
-      <div className="logo"><img src={logo}/></div>
-      <div className="navigation">
+    <div className='wrapper'>
+      <div className='logo'><img alt='logo' src={logo}/></div>
+      <div className='navigation'>
         { menu.map((item) => {
           return (
-            <Link key={ item.text } className="navigation__item" to={ item.link }>{ item.text }</Link>
+            <Link key={ item.text } className='navigation__item' to={ item.link }>{ item.text }</Link>
           )
         })}
       </div>
@@ -20,9 +20,7 @@ const Header = ({ menu }) => (
 )
 
 Header.propTypes = {
-}
-
-Header.defaultProps = {
+  menu: PropTypes.required,
 }
 
 export default Header

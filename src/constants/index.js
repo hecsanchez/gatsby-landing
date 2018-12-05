@@ -53,7 +53,7 @@ export const plans = [
   {
     name: 'BUSINESS',
     description: 'For big companies',
-    price: '18.99',
+    price: '$18.99',
     priceDescription: 'per month',
     promoText: 'Direct Mail Advertising How I Made 47 325 In 30 Days By Mailing',
     features: {

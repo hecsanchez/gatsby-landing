@@ -1,0 +1,49 @@
+.btn {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  padding: .5em;
+  border-radius: 6px;
+  font-size: 16px;
+  margin-top: 3em;
+  transition: all .3s ease;
+
+  &.btn--default {
+    color: #358ED7;
+    border: 2px solid #E1E8EE;
+
+    &:hover {
+      background: #358ED7;
+      color: #fff;
+      border-color: #358ED7;
+    }
+  }
+
+  &.btn--highlighted {
+    background: #7DC855;
+    color: #ffffff;
+
+    &:hover {
+      background: #ffffff;
+      color: #7DC855;
+    }
+  }
+
+  &.btn--lg {
+    display: block;
+    width: 167px;
+    height: 60px;
+    margin: 2.5em auto 5em;
+    padding: 1em 0;
+
+    @media screen and (max-width: 800px) {
+      width: 150px;
+      height: 50px;
+      margin: 2.5em auto 3em;
+    }
+  }
+
+  @media screen and (max-width: 800px) {
+    margin-top: 1em;
+  }
+}

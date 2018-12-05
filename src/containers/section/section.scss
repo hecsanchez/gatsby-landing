@@ -1,6 +1,27 @@
 .section {
   padding: 120px 0;
 
+  &.section--gray {
+    background: #F9F9F9;
+  }
+
+  &.section--dark {
+    background: #5E6977;
+    padding-top: 240px;
+
+    @media screen and (max-width: 800px) {
+      padding-top: 50px;
+    }
+
+    h1, h2 {
+      color: #ffffff;
+    }
+
+    h2 {
+      opacity: .8;
+    }
+  }
+
   @media screen and (max-width: 800px) {
     padding: 50px 0 30px;
   }
@@ -9,7 +30,7 @@
 .section__title {
   font-size: 52px;
   font-weight: 300;
-  max-width: 657px;
+  max-width: 685px;
   margin: auto;
   letter-spacing: -2px;
   margin-bottom: 20px;
@@ -31,7 +52,6 @@
 
   @media screen and (max-width: 800px) {
     font-size: 18px;
-    text-align: left;
   }
 }
 
@@ -41,6 +61,10 @@
 
 .text--default {
   color: #5E6977;
+}
+
+.text--alt {
+  color: #ffffff;
 }
 
 .hero {
@@ -53,13 +77,6 @@
 
 .selling-point {
   padding-right: 6%;
-}
-
-.selling-point__icon {
-  width: 56px;
-  height: 56px;
-  float: left;
-  margin-right: 27px;
 }
 
 .selling-point__title {

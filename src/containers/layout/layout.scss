@@ -622,7 +622,14 @@ pre tt:after {
 
 .row {
   display: flex;
-  flex-wrap: wrap;
+
+  @media only screen and (max-width: 800px) {
+    flex-wrap: wrap;
+  }
+  
+  &.row--sb {
+    justify-content: space-between;
+  }
 }
 
 .col {
@@ -654,4 +661,13 @@ pre tt:after {
 
 .col--one-sixth {
   width: 16.66%;
+}
+
+.text--md {
+  font-size: 18px;
+  color: #ffffff;
+  opacity: .6;
+  display: block;
+  text-align: center;
+  margin-bottom: 40px;
 }

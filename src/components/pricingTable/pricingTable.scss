@@ -1,13 +1,12 @@
 .pricing-table {
-  background: #FFFFFF;
   box-shadow: 1px 2px 3px 0 rgba(0,0,0,0.10);
   border-radius: 6px;
   margin: 4.5em 0 -12em;
   z-index: 1;
   position: relative;
+  overflow: hidden;
 
   @media screen and (max-width: 800px) {
-    background: none;
     box-shadow: none;
     margin: 2.5em 0 0;
   }
@@ -20,6 +19,7 @@
 
 .plan {
   padding: 30px;
+  background: #FFFFFF;
 
   li.feature.feature--included {
     font-size: 14px;
@@ -111,47 +111,5 @@
     font-size: 14px;
     padding-bottom: 15px;
     margin-bottom: 15px;
-  }
-}
-
-.icon--tick {
-  width: 15px;
-  height: 15px;
-  margin-right: 1em;
-}
-
-.btn {
-  display: block;
-  text-align: center;
-  text-decoration: none;
-  padding: .5em;
-  border-radius: 6px;
-  font-size: 16px;
-  margin-top: 3em;
-  transition: all .3s ease;
-
-  &.btn--default {
-    color: #358ED7;
-    border: 2px solid #E1E8EE;
-
-    &:hover {
-      background: #358ED7;
-      color: #fff;
-      border-color: #358ED7;
-    }
-  }
-
-  &.btn--hightlighted {
-    background: #7DC855;
-    color: #ffffff;
-
-    &:hover {
-      background: #ffffff;
-      color: #7DC855;
-    }
-  }
-
-  @media screen and (max-width: 800px) {
-    margin-top: 1em;
   }
 }

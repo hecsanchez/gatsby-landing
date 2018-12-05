@@ -1,0 +1,21 @@
+.icon--tick {
+  width: 15px;
+  height: 15px;
+  margin-right: 1em;
+}
+
+.icon--selling-point {
+  width: 56px;
+  height: 56px;
+  float: left;
+  margin-right: 27px;
+}
+
+.icon--client {
+  height: 30px;
+
+  @media screen and (max-width: 800px) {
+    width: 30%;
+    margin: 1em;
+  }
+}
