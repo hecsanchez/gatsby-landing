@@ -17,6 +17,7 @@ import '../images/icon-texts.svg'
 import '../images/icon-motorola.svg'
 import '../images/icon-netflix.svg'
 import '../images/icon-blue.svg'
+import '../images/icon-tick.svg'
 import heroImage from '../images/hero.jpg'
 
 
