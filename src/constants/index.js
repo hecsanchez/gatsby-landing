@@ -1,3 +1,8 @@
+export const languages = [
+  { code: "en", label: "English" },
+  { code: "es", label: "Español" },
+]
+
 export const menu = [
   { text: 'Features', link: '/features' },
   { text: 'Pricing', link: '/pricing' },
@@ -14,12 +19,12 @@ export const sellingPoints = [
   {
     icon: 'prototype',
     title: 'Prototype your Project',
-    description: '24/7 proactive threat scanning to prevent attacks.'
+    description: '24/7 proactive threat scanning to prevent attacks'
   },
   {
     icon: 'texts',
     title: 'Create Smart Texts',
-    description: '24/7 proactive threat scanning to prevent attacks.'
+    description: '24/7 proactive threat scanning to prevent attacks'
   }
 ]
 
@@ -85,3 +90,39 @@ export const clients = [
   'netflix',
   'adobe'
 ]
+
+export const footerLinks = [
+  {
+    title: 'Support',
+    links: [
+      { to: '/', text: 'About Us' },
+      { to: '/', text: 'Press' },
+      { to: '/', text: 'FAQ' },
+    ]
+  },
+  {
+    title: 'Business',
+    links: [
+      { to: '/', text: 'Home' },
+      { to: '/', text: 'Mobile' },
+      { to: '/', text: 'Pricing' },
+    ]
+  },
+  {
+    title: 'Community',
+    links: [
+      { to: '/', text: 'Developers' },
+      { to: '/', text: 'Referrals' },
+      { to: '/', text: 'Forum' },
+    ]
+  }
+]
+
+export const footerDescription = 'Huge modern UI Kit containing 130+ terrific components in 11 popular categories. Each component is fully.'
+
+export const carouselOptions = {
+  items: 1,
+  nav: true,
+  rewind: true,
+  autoplay: true
+}
