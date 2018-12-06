@@ -1,8 +1,20 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import Icon from '../../components/icon/icon'
+import i18n from "i18next";
+import { reactI18nextModule, withNamespaces } from "react-i18next";
+import resources from '../../locales'
 
 import './footer.scss'
+
+i18n.use(reactI18nextModule).init({
+  resources,
+  lng: "es",
+  fallbackLng: "en",
+  interpolation: {
+    escapeValue: false
+  }
+});
 
 const Footer = ({ icon, description, links, language, changeLanguage, t }) => (
   <footer>
@@ -38,4 +50,4 @@ const Footer = ({ icon, description, links, language, changeLanguage, t }) => (
   </footer>
 )
 
-export default Footer
+export default withNamespaces()(Footer)
